@@ -23,11 +23,27 @@ public class Main {
             } else { System.out.println(step1 + " ");}
             step1++;
         }
+        System.out.println ("Третий  вариант решения кантовского шагомера");
+        int step2 = 1;
+        while (step2 <=300 ) {
+            System.out.println (pedometerForKant3(step2));
+            step2++;
+        }
     }
 
     public static String pedometerForKant(int step) {
         return (step % 6 == 0) ? " Himmel und Erde " : ((!(step == 100)) ? step + "" +
                 " " : "Sagen Sie mir, kann man in Ihrem Land durch Null teilen? ");
+    }
+    public static String  pedometerForKant3(int step2) {
+        if (step2 == 100){
+            return (" Sagen Sie mir, kann man in Ihrem Land durch Null teilen?");
+        } else
+            if (step2 % 6 == 0) {
+            return (" Himmel und Erde ");}
+        else{
+            return (step2 + " ");
+        }
     }
 }
 
