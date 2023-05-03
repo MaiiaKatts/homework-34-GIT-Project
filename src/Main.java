@@ -15,6 +15,14 @@ public class Main {
             System.out.println(pedometerForKant(step));
             step++;
         }
+        System.out.println ("Второй  вариант решения кантовского шагомера");
+        int step1 = 1;
+        while (step1 <=300 ) {
+            if (step1 % 6 == 0) {System.out.println(" Himmel und Erde ");}
+            if (step1 == 100) { System.out.println("Sagen Sie mir, kann man in Ihrem Land durch Null teilen?");
+            } else { System.out.println(step1 + " ");}
+            step1++;
+        }
     }
 
     public static String pedometerForKant(int step) {
